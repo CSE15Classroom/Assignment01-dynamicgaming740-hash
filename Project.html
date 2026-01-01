@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Grid Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        /* Header */
+        .header {
+            background: #131921;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header input {
+            width: 60%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        /* Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .product {
+            background: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+        }
+
+        .price {
+            color: #b12704;
+            font-weight: bold;
+        }
+
+        button {
+            background: #f3a847;
+            border: none;
+            padding: 6px;
+            width: 100%;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>amazon</h2>
+        <input type="text" placeholder="Search Amazon">
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="laptop.webp">
+            <h4>Laptop</h4>
+            <p class="price">₹50,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="phone.webp">
+            <h4>Phone</h4>
+            <p class="price">₹12,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="speaker.webp">
+            <h4>Speaker</h4>
+            <p class="price">₹1,499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="T-shirt.jpg">
+            <h4>T-shirt</h4>
+            <p class="price">₹899</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="camera.webp">
+            <h4>Camera</h4>
+            <p class="price">₹12,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="tablet.webp">
+            <h4>Tablet</h4>
+            <p class="price">₹8499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="OIP.webp">
+            <h4>Power Bank</h4>
+            <p class="price">₹1,299</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="cable.webp">
+            <h4>USB Cable</h4>
+            <p class="price">₹199</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
